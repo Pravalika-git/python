@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+
+        *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway",serif;
+
+}
+
+html , body{
+    width: 100%;
+    height: 100%;
+    
+}
+
+body>*{
+    filter: grayscale(50%);
+
+}
+
+.bg_image
+{
+    width: 100%;
+    background-image: url('https://www.w3schools.com/w3images/wedding_couple.jpg');
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+     position: relative;
+     background-color:#f3e2e2;  
+     text-align: center;
+     
+} 
+.bg-content {
+    position: absolute;
+    top: 40%;
+    left:40%;
+    line-height:70px;
+    display:row;
+    align-items: center;
+}
+
+.bg-content p{
+    color: white;
+}
+
+.bg-content p:first-child{
+ font-size: 52px;
+ text-align: center;
+
+} 
+ 
+.bg-content p:nth-child(3){
+    font-size: 32px;
+    text-align: center;
+}
+
+.foot{
+  width: 100%;
+  bottom:0px;
+  display: flex;
+  transition: 0.5sec;
+  justify-content: space-evenly;
+  position: fixed;
+  padding: 8px;
+  z-index: 999; 
+  background-color: lightgray;
+
+}
+ .foot a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    bottom: 0px;
+
+}  
+
+.foot:hover{
+    background-color: #fff;
+}
+.foot a:hover{
+    background-color: lightgray;
+}
+.foot a:last-child:hover{
+   background-color:black;
+     color: #fff; 
+ 
+} 
+
+.container{
+ width: 100%;
+ background-color:#f3e2e2;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 70px;
+background-color:#f3e2e2; 
+}
+
+.container>*{
+    width: 75%;
+    text-align: center;
+    background-color:#f3e2e2; 
+}
+.bg-image1 img{
+    width: 100%;
+    background-color:#f3e2e2; 
+}
+
+.container .jane{
+    padding-top: 60px;
+    font-size: 32px;
+    background-color:#f3e2e2; 
+    
+}
+.para{
+    text-align: justify;
+    font-style: italic;
+    line-height: 30px;
+    background-color:#f3e2e2; 
+
+}
+
+  .box{
+    width:30%;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    padding: 5px;
+    margin: 5px;
+    background-color: #000;
+    color: white;
+    transition: 0.2sec;
+    <!-- background-color:#f3e2e2; -->
+    
+
+    
+   
+ }
+  .wedding:hover {
+    width:50%;
+    height:30px;
+    color: white;
+    background-color:lightgrey;
+    font-family: "Raleway", sans-serif;
+    border-radius: 5px;
+   text-align: center;
+     transition: 0.2sec;
+   
+ } 
+
+
+.container1{
+    background-image:url(https://www.w3schools.com/w3images/flowers.jpg);
+    width:100%;
+    min-height:700px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color:#f3e2e2; 
+    
+}
+
+.invited{
+    position: absolute;
+     top: 50%;
+    left: 50%; 
+    transform: translate(-50% -50%);
+    line-height: 100px;
+    letter-spacing: 3px;
+ 
+}
+.invited p:nth-child(1){
+    font-size: 55px;
+    color: white;
+       
+}
+.invited p:nth-child(2){
+    font-size: 25px;
+    color: white;
+
+}
+
+     #wedding{
+        margin-top: 20px;
+        width: 100%;
+        height: 100px;
+        background-color:#f3e2e2; 
+    }
+    #wedding p{
+        color: grey;
+        text-align: center;
+         padding: 10px; 
+        font-size: 40px;
+        margin-bottom: 10px;
+        font-family: "Raleway", sans-serif;
+        font-style: italic;
+        background-color:#f3e2e2; 
+}
+    
+    .dining img{
+        border-radius: 15px;
+        width: 100%;
+        background-color:#f3e2e2; 
+    }
+
+
+.whenwhere{
+    display: flex;
+    justify-content: space-around;
+    line-height: 50px;
+    align-items: center;
+    background-color:#f3e2e2; 
+}
+
+    .when p:nth-child(1), .where p:nth-child(1){
+        font-size: 35px;
+        background-color:#f3e2e2; 
+    }
+    .when p:nth-child(2), .where p:nth-child(2){
+        font-size: 15px;
+        margin: 10px;
+        background-color:#f3e2e2; 
+    }
+    .when p:nth-child(3), .where p:nth-child(3){
+        font-size: 15px;
+        background-color:#f3e2e2; 
+
+    }
+  
+    last p:nth-child(1){
+        font-size: 37px;
+        background-color:#f3e2e2; 
+
+    }
+    last p:nth-child(2){
+        font-size: 22px;
+        background-color:#f3e2e2; 
+    }
+ 
+    .last{
+        background-color:pink;
+        padding: 50px;
+        line-height: 80px;
+        letter-spacing: 2px;
+        display: flexbox;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .last p:nth-child(1){
+        font-size: 37px;
+
+    }
+
+    .last p:nth-child(2){
+        font-size: 22px;
+    }
+    .last span{
+        background-color:lightcoral;
+        width:30%;
+        color: white;
+        border-radius: 5px;
+         display: inline-block; 
+        align-items: center;
+    }
+    .last span:hover{
+        background-color: lightgrey;
+        color: #000;
+        color: white;
+    }
+     .w3{
+        background-color: black;
+        padding: 40px;
+        color:  white;
+        width: 100%;
+        margin-bottom: 20px;
+
+    } 
+  .w3 a{
+    color: white;
+  }
+  .w3 :hover{
+    color: green;
+  }
+  @media screen and (max-width :750px) and (max-width : 1180px){
+    .container>*{
+        width: 95%;
+    }
+    .container .marriage{
+        font-size:15px;
+        padding: 18px;
+        width: 20%;
+    }
+    .w3{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width :749px){
+    .container>*{
+        width: 95%;
+    }
+    .container .wedding{
+        font-size: 15px;
+        padding: 18px;
+        width: 23%;
+    }
+    .foot span{
+        width: 20%;
+    }
+    .bg-content p:nth-child(1){
+        font-family: 64px;
+        text-align: center;
+    }
+
+    .bg-content p:nth-child(1){
+        font-family: 36px;
+    }
+ .whenwhere{
+    flex-direction: column;
+ }
+ .w3{
+    margin-bottom:0px ;
+    width: 100%;
+ }
+}
+
+
+  @media screen and (max-width :600px){
+    .container>*{
+        width: 60%;
+    }
+
+    .container .marriage{
+        font-size: 14px;
+        padding: 10px;
+        width: 33%;
+    }
+
+     .w3{
+        width: 100%;
+    }
+
+    .last span{
+        font-size: 12px;
+        padding: 0px;
+      width: 35%;
+
+    }
+  }
+
+
+    </style>
+    <body>
+</head>
+<body id="home">
+    
+    <div class="bg_image"></div>
+    <div class="bg-content">
+    <P>jane & john</P>
+    <P>Are getting married</P>
+   <P>17.07.2017</P>
+    </div>
+    
+    <footer class="foot">
+        <a href="#home">Home</a>
+        <a href="#jane&john">Jane&John</a>
+        <a href="#wedding">Wedding</a>
+        <a href="#rsvp">Rsvp</a>
+     </footer> 
+
+    </div>
+
+    <div class="container">
+     <div id="jane&jhon" class="jane">Jane & john</div> 
+    </div>
+    <div class="bg-image1">
+        <img src="https://www.w3schools.com/w3images/wedding_couple2.jpg">
+    </div>
+    <div class="para">
+        You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+        consequat.
+    </div>
+   <center>
+       <div class="box">
+     <div class="wedding">Wedding Details</div> 
+    </div>
+   </center>
+
+     <div class="container1">
+        <div class="flowers">
+            <div class="invited">
+                <P>You Are Invited</P>
+                <P>of course...</P>
+            </div>
+        </div>
+    </div>
+
+        <div id="wedding">
+            <p>THE WEDDING</p>
+        </div>
+
+     <div class="dining">
+     <img src="https://www.w3schools.com/w3images/wedding_location.jpg">
+        
+
+ <center>
+<div class="whenwhere">
+ <div class="When">
+    <P>When</P>
+    <P> Wedding Ceremony - 2:00pm </P>
+    <P>Reception & Dinner - 5:00pm  </P>
+ </div>
+ 
+    <div class="Where">
+        <P>where</P>
+       <P>Some place, an address</P>
+       <P> Some where, some address </P>
+    </div>
+    <center>
+</div>
+
+<div class="last">
+    <P>HOPE YOU CAN MAKE IT!</P>
+    <P>Kindly Respond By January, 2017 </P>
+    <span>RSVD</span>
+ </center>
+<div id="revp" class="w3">
+    "Powered By"
+    <a href="https://www.w3schools.com/w3css/default.asp"></a>
+</div>
+
+
+</body>
+</html>
