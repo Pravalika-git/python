@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+     
+         
+        .item{
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 10px;
+            gap: 10px;
+        }
+        .item1{
+               grid-area:a;    
+            background-image: linear-gradient(#3b8080,#ce8080);
+        
+         
+        }
+            .item2{
+                  grid-area:b;  
+                background-image: linear-gradient(#245c80,#6c1380);
+
+
+            } 
+            .item3{
+                 grid-area:c ;
+                background-image: linear-gradient(#245c80,#6c1380); 
+
+            }
+            .item4{
+                 grid-area: d; 
+                background-image: linear-gradient(#3b8080,#ce8080);   
+                
+            }
+            .item5{
+                 grid-area:e ; 
+                background-image: linear-gradient(#3b8080,#ce8080);
+            
+                
+            }
+            .item6{
+                 grid-area:f ; 
+                background-image: linear-gradient(#3b8080,#ce8080);
+                
+                
+            }
+            .item7{
+                
+                background-image: linear-gradient(#3b8080,#ce8080);
+                grid-area: g; 
+                
+                
+            }
+            .item8{
+                 grid-area:h ; 
+                background-image: linear-gradient(#245c80,#6c1380);
+                
+                
+            }
+
+            .item9{
+                 grid-area:i ; 
+                background-image: linear-gradient(#3b8080,#ce8080);
+            
+                
+            }
+            .item10{
+                 grid-area:j ;
+                background-image: linear-gradient(#3b8080,#ce8080);
+                
+            }
+            .item11{
+                 grid-area: k; 
+                background-image: linear-gradient(#3b8080,#ce8080);
+                
+            }
+
+            .item12{
+                 grid-area: l; 
+                background-image: linear-gradient(#3b8080,#ce8080);
+            }
+            .item13{
+                 grid-area: m; 
+                background-image: linear-gradient(#3b8080,#ce8080);
+                
+            }
+            .item14{
+                 grid-area:n; 
+                background-image: linear-gradient(#3b8080,#ce8080);
+                
+            }
+            .grid-container{
+                height: 100vh;
+                gap: 10px;
+                display: grid;
+                grid-template-columns:repeat(5,1fr) ; 
+                 grid-template-areas: 
+                 'e a a a c c' 
+                 'f a a a d d'
+                 'g  i  b b  k l '
+                  'h  j   b b m n' ;  
+
+            }
+
+
+            @media screen  and (width: 500px){
+                .conatiner{
+                    height: 100vh;
+                    grid-template-columns: 1fr;
+                }
+                .item{
+                    width: 100wv;
+                }
+                .item1{
+                    grid-area: 'a';
+                }
+                .item2{
+                    grid-area: 'b' ;
+                     
+                }
+                .item3{
+                    grid-area: 'c';
+
+
+                }
+                .item4{
+                    grid-area: 'd';
+
+                }
+                .item5{
+                    grid-area:'e';
+
+                }
+                .item6{
+                    grid-area: 'f';
+
+
+                }
+                .item7{
+                    grid-area: 'g';
+
+                }
+                .item8{
+                    grid-area: 'h';
+
+                }
+                
+                .item9{
+                    grid-area: 'i';
+
+                }
+                .item10{
+                    grid-area: 'j';
+
+                }
+                .item11{
+                    grid-area: 'k';
+
+                }
+                .item12{
+                    grid-area: 'l';
+
+                }
+                .item13{
+                    grid-area: 'm';
+
+                }
+                .item14{
+                    grid-area: 'n';
+
+                }
+
+
+
+                }
+
+            
+                
+            
+               
+    
+              
+
+        
+    </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="item item1">item - 1</div>
+    <div class="item item2">item - 2</div>
+    <div class="item item3">item - 3</div>
+    <div class="item item4">item - 4</div>
+    <div class="item item5">item - 5</div>
+    <div class="item item6">item - 6</div>
+    <div class="item item7">item - 7</div>
+    <div class="item item8">item - 8</div>
+    <div class="item item9">item - 9</div>
+    <div class="item item10">item - 10</div>
+    <div class="item item11">item - 11</div>
+    <div class="item item12">item - 12</div>
+    <div class="item item13">item - 13</div>
+    <div class="item item14">item - 14</div>
+  </div>
+
+    
+</body>
+</html>
